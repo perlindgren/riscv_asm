@@ -1,9 +1,9 @@
 SECTIONS
 {
   . = 0x0;
-  .init :
+  .text :
   {
-    KEEP(*(.init)); 
+    KEEP(*(.text)); 
   }
 
   . = 0x1000;
