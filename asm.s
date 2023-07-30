@@ -1,13 +1,9 @@
-.section .init, "ax"
-.global _start
+.section .text
 
-_start:
+start:
     lw x0, 0(x0)
     sw x1, 0(x1)
 
-.section .some_section , "ax"
-.global _some_symbol
-
-_some_symbol:
-    lw x0, 0(x0)
-    sw x1, 0(x1)
+.section .data 
+a:  .byte 0,1,2,3
+b:  .word 0,1,2,3
