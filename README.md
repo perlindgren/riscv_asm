@@ -4,13 +4,16 @@ Experiment to check if we can do assembly programming in an easy way using the R
 
 ## Installation
 
-- Rust installed 
+- Rust installed.
+
+- RISCV backend.
   
 - Rust LLVM tools distribution (you can also use any llvm or gnu counterpart)
 
 - [Cargo binutils](https://github.com/rust-embedded/cargo-binutils) for easy integration.
 
 ```shell
+rustup target add riscv32i-unknown-none-elf
 rustup component add llvm-tools 
 cargo install cargo-binutils
 ```
